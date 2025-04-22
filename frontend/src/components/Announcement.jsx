@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import {fetchAnnouncement} from '../store/slice/AnnouncementSlice'
+import {fetchAnnouncement} from '../store/slice/announcementSlice'
 const Announcement = () => {
   const dispatch=useDispatch()
   const {is_loading,is_error,announcement}=useSelector((state)=>state.announcement)
